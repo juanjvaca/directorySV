@@ -1,0 +1,17 @@
+<nav>
+    <ul style="text-align:center">
+      <li>
+        <a [class.activated]="currentUrl == '/'" style="color: rgb(66, 66, 64)">
+          <i routerLink="" class="material-icons" style="color: rgb(66, 66, 64)">supervised_user_circle</i>Users</a></li>
+      <li>
+        <a [class.activated]="currentUrl == '/posts'" style="color: rgb(66, 66, 64)">
+          <i routerLink="posts" class="material-icons">message</i>Posts</a></li>
+    </ul>
+  </nav>
+
+  <style>
+    
+  li {
+    color: white;
+  }
+  </style>

@@ -1,0 +1,15 @@
+
+ <br>
+ <div style="text-align:center">
+ <H1 style="color:rgb(66, 66, 64)" >Welcome to Statesville</H1>
+</div>
+<div style="text-align:center">
+<h1 style="color: rgb(66, 66, 64)">Posts</h1>
+</div>
+<ul [@listStagger]="posts$">
+  <li *ngFor="let post of posts$" style="box-shadow: 10px 5px 10px grey">
+    <a routerLink="">{{ post.title }}</a>
+
+    <p>{{ post.body }}</p>
+  </li>
+</ul>
